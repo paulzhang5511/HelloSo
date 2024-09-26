@@ -1,0 +1,12 @@
+[target.aarch64-linux-android]
+ar = 'D:\software\android\sdk\ndk\26.3.11579264\toolchains/llvm/prebuilt/windows-x86_64\bin\llvm-ar.exe'
+linker = 'D:\software\android\sdk\ndk\26.3.11579264\toolchains/llvm/prebuilt/windows-x86_64\bin\aarch64-linux-android24-clang.cmd'
+rustflags = ["-Clink-arg=-landroid", "-Clink-arg=-llog"]
+
+[target.x86_64-linux-android]
+ar = 'D:\software\android\sdk\ndk\26.3.11579264\toolchains/llvm/prebuilt/windows-x86_64\bin\llvm-ar.exe'
+linker = 'D:\software\android\sdk\ndk\26.3.11579264\toolchains/llvm/prebuilt/windows-x86_64\bin\x86_64-linux-android24-clang.cmd'
+rustflags = ["-Clink-arg=-landroid", "-Clink-arg=-llog"]
+
+[build]
+target = "aarch64-linux-android"
